@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
@@ -63,5 +63,45 @@ class ConversionViewController: UIViewController {
         else {
             fahrenHeitValues = nil
         }
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+//        print("current text: \(String(describing: textField.text))")
+//        print("replacement text: \(string)")
+//        return true
+        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeperator = string.range(of: ".")
+        
+        
+        if existingTextHasDecimalSeparator != nil &&
+            replacementTextHasDecimalSeperator != nil {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.brown
+        print("ConversionView Controller viewDidLoad worked!!!!!!!!")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("Conversion view will appear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Conversion view has appeared")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("Conversion view will disappear")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("Conversion view has disappeared")
     }
 }

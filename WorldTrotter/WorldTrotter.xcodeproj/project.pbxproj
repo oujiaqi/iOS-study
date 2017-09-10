@@ -11,7 +11,10 @@
 		BE1E66E61F61A234006BC0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1E66E41F61A234006BC0A7 /* Main.storyboard */; };
 		BE1E66E81F61A234006BC0A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1E66E71F61A234006BC0A7 /* Assets.xcassets */; };
 		BE1E66EB1F61A234006BC0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1E66E91F61A234006BC0A7 /* LaunchScreen.storyboard */; };
+		BE35322C1F6561D100223B6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE35322B1F6561D100223B6D /* MapKit.framework */; };
 		BE9849601F61AEDB00B4E3D4 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98495F1F61AEDB00B4E3D4 /* ConversionViewController.swift */; };
+		BEA3431A1F656CB30019A43B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA343191F656CB30019A43B /* MapViewController.swift */; };
+		BEA3431C1F65AC5C0019A43B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3431B1F65AC5C0019A43B /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +24,10 @@
 		BE1E66E71F61A234006BC0A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1E66EA1F61A234006BC0A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE1E66EC1F61A234006BC0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE35322B1F6561D100223B6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BE98495F1F61AEDB00B4E3D4 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		BEA343191F656CB30019A43B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BEA3431B1F65AC5C0019A43B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE35322C1F6561D100223B6D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				BE1E66DF1F61A234006BC0A7 /* WorldTrotter */,
 				BE1E66DE1F61A234006BC0A7 /* Products */,
+				BE35322A1F6561D000223B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +64,22 @@
 			children = (
 				BE1E66E01F61A234006BC0A7 /* AppDelegate.swift */,
 				BE98495F1F61AEDB00B4E3D4 /* ConversionViewController.swift */,
+				BEA343191F656CB30019A43B /* MapViewController.swift */,
+				BEA3431B1F65AC5C0019A43B /* WebViewController.swift */,
 				BE1E66E41F61A234006BC0A7 /* Main.storyboard */,
 				BE1E66E71F61A234006BC0A7 /* Assets.xcassets */,
 				BE1E66E91F61A234006BC0A7 /* LaunchScreen.storyboard */,
 				BE1E66EC1F61A234006BC0A7 /* Info.plist */,
 			);
 			path = WorldTrotter;
+			sourceTree = "<group>";
+		};
+		BE35322A1F6561D000223B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE35322B1F6561D100223B6D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9849601F61AEDB00B4E3D4 /* ConversionViewController.swift in Sources */,
+				BEA3431A1F656CB30019A43B /* MapViewController.swift in Sources */,
 				BE1E66E11F61A234006BC0A7 /* AppDelegate.swift in Sources */,
+				BEA3431C1F65AC5C0019A43B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
