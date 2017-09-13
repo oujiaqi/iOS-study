@@ -13,6 +13,7 @@
 		22A70A681F66BE0B001418F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A70A661F66BE0B001418F2 /* LaunchScreen.storyboard */; };
 		22A70A701F66BF87001418F2 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A70A6F1F66BF87001418F2 /* ItemViewController.swift */; };
 		22A70A721F66C0BF001418F2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A70A711F66C0BF001418F2 /* Item.swift */; };
+		BE78CE9A1F66EA2E0044735E /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE78CE991F66EA2E0044735E /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22A70A691F66BE0B001418F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A70A6F1F66BF87001418F2 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		22A70A711F66C0BF001418F2 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BE78CE991F66EA2E0044735E /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				22A70A5D1F66BE0B001418F2 /* AppDelegate.swift */,
 				22A70A6F1F66BF87001418F2 /* ItemViewController.swift */,
+				BE78CE991F66EA2E0044735E /* ItemStore.swift */,
 				22A70A711F66C0BF001418F2 /* Item.swift */,
 				22A70A611F66BE0B001418F2 /* Main.storyboard */,
 				22A70A641F66BE0B001418F2 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				22A70A5E1F66BE0B001418F2 /* AppDelegate.swift in Sources */,
 				22A70A721F66C0BF001418F2 /* Item.swift in Sources */,
+				BE78CE9A1F66EA2E0044735E /* ItemStore.swift in Sources */,
 				22A70A701F66BF87001418F2 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				22A70A6E1F66BE0B001418F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
