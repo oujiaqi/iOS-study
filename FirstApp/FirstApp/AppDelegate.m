@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OJQLoginViewController.h"
+#import "OJQQuestionViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     OJQLoginViewController *loginVC = [[OJQLoginViewController alloc] init];
-    self.window.rootViewController = loginVC;
+//    self.window.rootViewController = loginVC;
+    OJQQuestionViewController *quesVC = [[OJQQuestionViewController alloc] init];
+//    self.window.rootViewController = quesVC;
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[loginVC, quesVC];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */; };
 		BE81BE1E1F698EF200C1D554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE1D1F698EF200C1D554 /* main.m */; };
 		BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE201F698EF200C1D554 /* AppDelegate.m */; };
 		BE81BE271F698EF200C1D554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE81BE251F698EF200C1D554 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQQuestionViewController.h; path = Classes/OJQQuestionViewController.h; sourceTree = "<group>"; };
+		22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQQuestionViewController.m; path = Classes/OJQQuestionViewController.m; sourceTree = "<group>"; };
 		BE81BE191F698EF200C1D554 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE81BE1D1F698EF200C1D554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE81BE1F1F698EF200C1D554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 			children = (
 				BE81BE1F1F698EF200C1D554 /* AppDelegate.h */,
 				BE81BE201F698EF200C1D554 /* AppDelegate.m */,
+				22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */,
+				22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */,
 				BE81BE331F698F2300C1D554 /* OJQLoginViewController.h */,
 				BE81BE341F698F2300C1D554 /* OJQLoginViewController.m */,
 				BE81BE351F698F2300C1D554 /* OJQLoginViewController.xib */,
@@ -157,6 +162,7 @@
 				BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */,
 				BE81BE1E1F698EF200C1D554 /* main.m in Sources */,
 				BE81BE361F698F2300C1D554 /* OJQLoginViewController.m in Sources */,
+				22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 				BE81BE321F698EF200C1D554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
