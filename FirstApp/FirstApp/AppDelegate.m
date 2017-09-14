@@ -1,20 +1,30 @@
 //
 //  AppDelegate.m
-//  SimpleApp
+//  FirstApp
 //
-//  Created by colinou on 2017/9/13.
-//  Copyright © 2017年 colinou. All rights reserved.
+//  Created by ouou on 2017/9/14.
+//  Copyright © 2017年 ouou. All rights reserved.
 //
-
-#import "OJQLoginViewController.h"
 
 #import "AppDelegate.h"
+#import "OJQLoginViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    OJQLoginViewController *loginVC = [[OJQLoginViewController alloc] init];
+    self.window.rootViewController = loginVC;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -42,7 +52,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface OJQLoginViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UITextField *passwordTextFiel;
 @end
