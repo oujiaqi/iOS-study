@@ -15,6 +15,16 @@
 
 @implementation OJQLoginViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.title = @"Login";
+        UIImage *i = [UIImage imageNamed: @"aim.png"];
+        self.tabBarItem.image = i;
+    }
+    return self;
+}
+
 - (IBAction)userLogin:(id)sender {
     NSString *username = _usernameTextField.text;
     NSString *password = _passwordTextField.text;

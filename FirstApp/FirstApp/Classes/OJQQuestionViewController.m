@@ -14,6 +14,16 @@
 
 @implementation OJQQuestionViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.title = @"Test";
+        UIImage *i = [UIImage imageNamed: @"github.png"];
+        self.tabBarItem.image = i;
+    }
+    return self;
+}
+
 - (void) loadView {
     UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
     UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 15, 50, 50)];

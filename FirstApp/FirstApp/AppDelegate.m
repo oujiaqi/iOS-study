@@ -24,13 +24,13 @@
     OJQLoginViewController *loginVC = [[OJQLoginViewController alloc] init];
 //    self.window.rootViewController = loginVC;
     OJQQuestionViewController *quesVC = [[OJQQuestionViewController alloc] init];
+    quesVC.view.backgroundColor = [UIColor whiteColor];
 //    self.window.rootViewController = quesVC;
-    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[loginVC, quesVC];
     
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = tabBarController;
+//    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
