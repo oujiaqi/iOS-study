@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "OJQLoginViewController.h"
 #import "OJQQuestionViewController.h"
+#import "OJQUITabTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,8 +27,12 @@
     OJQQuestionViewController *quesVC = [[OJQQuestionViewController alloc] init];
     quesVC.view.backgroundColor = [UIColor whiteColor];
 //    self.window.rootViewController = quesVC;
+    
+    OJQUITabTableViewController *tabVC = [[OJQUITabTableViewController alloc] init];
+    tabVC.view.backgroundColor = [UIColor whiteColor];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[loginVC, quesVC];
+    tabBarController.viewControllers = @[loginVC, quesVC, tabVC];
     
     self.window.rootViewController = tabBarController;
 //    self.window.backgroundColor = [UIColor whiteColor];

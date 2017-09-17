@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */; };
+		BE508E741F6E3051006DB5F9 /* OJQUITabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE508E731F6E3051006DB5F9 /* OJQUITabTableViewController.m */; };
 		BE81BE1E1F698EF200C1D554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE1D1F698EF200C1D554 /* main.m */; };
 		BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE201F698EF200C1D554 /* AppDelegate.m */; };
 		BE81BE271F698EF200C1D554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE81BE251F698EF200C1D554 /* Main.storyboard */; };
@@ -15,11 +16,15 @@
 		BE81BE2C1F698EF200C1D554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE81BE2A1F698EF200C1D554 /* LaunchScreen.storyboard */; };
 		BE81BE361F698F2300C1D554 /* OJQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE341F698F2300C1D554 /* OJQLoginViewController.m */; };
 		BE81BE371F698F2300C1D554 /* OJQLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE81BE351F698F2300C1D554 /* OJQLoginViewController.xib */; };
+		BEDB560F1F6E563000FFCAE0 /* OJQItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */; };
+		BEDB56121F6E591900FFCAE0 /* OJQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB56111F6E591900FFCAE0 /* OJQItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQQuestionViewController.h; path = Classes/OJQQuestionViewController.h; sourceTree = "<group>"; };
 		22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQQuestionViewController.m; path = Classes/OJQQuestionViewController.m; sourceTree = "<group>"; };
+		BE508E721F6E3051006DB5F9 /* OJQUITabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQUITabTableViewController.h; path = Classes/OJQUITabTableViewController.h; sourceTree = "<group>"; };
+		BE508E731F6E3051006DB5F9 /* OJQUITabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQUITabTableViewController.m; path = Classes/OJQUITabTableViewController.m; sourceTree = "<group>"; };
 		BE81BE191F698EF200C1D554 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE81BE1D1F698EF200C1D554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE81BE1F1F698EF200C1D554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +36,10 @@
 		BE81BE331F698F2300C1D554 /* OJQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQLoginViewController.h; path = Classes/OJQLoginViewController.h; sourceTree = "<group>"; };
 		BE81BE341F698F2300C1D554 /* OJQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQLoginViewController.m; path = Classes/OJQLoginViewController.m; sourceTree = "<group>"; };
 		BE81BE351F698F2300C1D554 /* OJQLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJQLoginViewController.xib; path = Classes/OJQLoginViewController.xib; sourceTree = "<group>"; };
+		BEDB560D1F6E563000FFCAE0 /* OJQItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQItemStore.h; path = Classes/OJQItemStore.h; sourceTree = "<group>"; };
+		BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQItemStore.m; path = Classes/OJQItemStore.m; sourceTree = "<group>"; };
+		BEDB56101F6E591900FFCAE0 /* OJQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQItem.h; path = Classes/OJQItem.h; sourceTree = "<group>"; };
+		BEDB56111F6E591900FFCAE0 /* OJQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQItem.m; path = Classes/OJQItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,12 @@
 			children = (
 				BE81BE1F1F698EF200C1D554 /* AppDelegate.h */,
 				BE81BE201F698EF200C1D554 /* AppDelegate.m */,
+				BEDB56101F6E591900FFCAE0 /* OJQItem.h */,
+				BEDB56111F6E591900FFCAE0 /* OJQItem.m */,
+				BEDB560D1F6E563000FFCAE0 /* OJQItemStore.h */,
+				BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */,
+				BE508E721F6E3051006DB5F9 /* OJQUITabTableViewController.h */,
+				BE508E731F6E3051006DB5F9 /* OJQUITabTableViewController.m */,
 				22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */,
 				22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */,
 				BE81BE331F698F2300C1D554 /* OJQLoginViewController.h */,
@@ -160,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */,
+				BEDB560F1F6E563000FFCAE0 /* OJQItemStore.m in Sources */,
 				BE81BE1E1F698EF200C1D554 /* main.m in Sources */,
+				BEDB56121F6E591900FFCAE0 /* OJQItem.m in Sources */,
+				BE508E741F6E3051006DB5F9 /* OJQUITabTableViewController.m in Sources */,
 				BE81BE361F698F2300C1D554 /* OJQLoginViewController.m in Sources */,
 				22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */,
 			);

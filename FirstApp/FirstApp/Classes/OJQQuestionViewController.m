@@ -21,6 +21,7 @@
         UIImage *i = [UIImage imageNamed: @"github.png"];
         self.tabBarItem.image = i;
     }
+    printf("Question");
     return self;
 }
 
