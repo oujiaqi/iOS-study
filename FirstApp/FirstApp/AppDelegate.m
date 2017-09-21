@@ -22,17 +22,21 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    
     OJQLoginViewController *loginVC = [[OJQLoginViewController alloc] init];
 //    self.window.rootViewController = loginVC;
     OJQQuestionViewController *quesVC = [[OJQQuestionViewController alloc] init];
     quesVC.view.backgroundColor = [UIColor whiteColor];
 //    self.window.rootViewController = quesVC;
+
     
     OJQUITabTableViewController *tabVC = [[OJQUITabTableViewController alloc] init];
     tabVC.view.backgroundColor = [UIColor whiteColor];
     
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tabVC];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[loginVC, quesVC, tabVC];
+    tabBarController.viewControllers = @[loginVC, quesVC, navController];
     
     self.window.rootViewController = tabBarController;
 //    self.window.backgroundColor = [UIColor whiteColor];

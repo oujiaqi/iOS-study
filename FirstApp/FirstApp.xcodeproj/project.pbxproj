@@ -18,6 +18,8 @@
 		BE81BE371F698F2300C1D554 /* OJQLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE81BE351F698F2300C1D554 /* OJQLoginViewController.xib */; };
 		BEDB560F1F6E563000FFCAE0 /* OJQItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */; };
 		BEDB56121F6E591900FFCAE0 /* OJQItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB56111F6E591900FFCAE0 /* OJQItem.m */; };
+		BEE3FA291F742DA0009853BB /* OJQDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE3FA271F742DA0009853BB /* OJQDetialViewController.m */; };
+		BEE3FA2A1F742DA0009853BB /* OJQDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE3FA281F742DA0009853BB /* OJQDetialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQItemStore.m; path = Classes/OJQItemStore.m; sourceTree = "<group>"; };
 		BEDB56101F6E591900FFCAE0 /* OJQItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQItem.h; path = Classes/OJQItem.h; sourceTree = "<group>"; };
 		BEDB56111F6E591900FFCAE0 /* OJQItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQItem.m; path = Classes/OJQItem.m; sourceTree = "<group>"; };
+		BEE3FA261F742DA0009853BB /* OJQDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQDetialViewController.h; path = Classes/OJQDetialViewController.h; sourceTree = "<group>"; };
+		BEE3FA271F742DA0009853BB /* OJQDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQDetialViewController.m; path = Classes/OJQDetialViewController.m; sourceTree = "<group>"; };
+		BEE3FA281F742DA0009853BB /* OJQDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJQDetialViewController.xib; path = Classes/OJQDetialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,9 @@
 				BE81BE201F698EF200C1D554 /* AppDelegate.m */,
 				BEDB56101F6E591900FFCAE0 /* OJQItem.h */,
 				BEDB56111F6E591900FFCAE0 /* OJQItem.m */,
+				BEE3FA261F742DA0009853BB /* OJQDetialViewController.h */,
+				BEE3FA271F742DA0009853BB /* OJQDetialViewController.m */,
+				BEE3FA281F742DA0009853BB /* OJQDetialViewController.xib */,
 				BEDB560D1F6E563000FFCAE0 /* OJQItemStore.h */,
 				BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */,
 				BE508E721F6E3051006DB5F9 /* OJQUITabTableViewController.h */,
@@ -161,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE81BE2C1F698EF200C1D554 /* LaunchScreen.storyboard in Resources */,
+				BEE3FA2A1F742DA0009853BB /* OJQDetialViewController.xib in Resources */,
 				BE81BE371F698F2300C1D554 /* OJQLoginViewController.xib in Resources */,
 				BE81BE291F698EF200C1D554 /* Assets.xcassets in Resources */,
 				BE81BE271F698EF200C1D554 /* Main.storyboard in Resources */,
@@ -174,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE3FA291F742DA0009853BB /* OJQDetialViewController.m in Sources */,
 				BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */,
 				BEDB560F1F6E563000FFCAE0 /* OJQItemStore.m in Sources */,
 				BE81BE1E1F698EF200C1D554 /* main.m in Sources */,

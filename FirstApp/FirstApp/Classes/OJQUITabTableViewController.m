@@ -9,12 +9,28 @@
 #import "OJQUITabTableViewController.h"
 #import "OJQItemStore.h"
 #import "OJQItem.h"
+#import "OJQDetialViewController.h"
+
 
 @interface OJQUITabTableViewController ()
 
 @end
 
 @implementation OJQUITabTableViewController
+
+- (void) viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:<#animated#>];
+    [self.tableView reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    OJQDetialViewController *detialVC = [[OJQDetialViewController alloc] init];
+    NSArray *items = [[OJQItemStore sharedStore] allItems];
+    OJQItem *selectedItem = items[indexPath.row];
+    
+    detialVC.item = selectedItem;
+    [self.navigationController pushViewController:detialVC animated:YES];
+}
 
 
 - (void)viewDidLoad {
