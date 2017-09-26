@@ -35,5 +35,10 @@
     item.height = self.heightField.text;
 }
 
+- (void) setItem: (OJQItem *) item {
+    _item = item;
+    self.navigationItem.title = _item.name;
+}
+
 
 @end

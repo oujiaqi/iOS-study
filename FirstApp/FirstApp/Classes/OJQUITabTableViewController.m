@@ -59,6 +59,10 @@
         for (int i = 0; i < 5; i++) {
             [[OJQItemStore sharedStore] createItem];
         }
+        
+        // 增加navigation bar title
+        UINavigationItem *navItem = self.navigationItem;
+        navItem.title = @"Table";
     }
     return self;
 }
