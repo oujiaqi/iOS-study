@@ -59,12 +59,18 @@
         for (int i = 0; i < 5; i++) {
             [[OJQItemStore sharedStore] createItem];
         }
-        
-        // 增加navigation bar title
         UINavigationItem *navItem = self.navigationItem;
-        navItem.title = @"Table";
+        navItem.title = @"Main";
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+        navItem.rightBarButtonItem = bbi;
     }
     return self;
+}
+
+- (void) addNewItem: (OJQItem*) nItem {
+    [[OJQItemStore sharedStore] createItem];
+    [self.tableView reloadData];
+    
 }
 
 - (instancetype) initWithStyle:(UITableViewStyle)style {
