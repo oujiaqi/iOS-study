@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */; };
+		22F887361F7D0F380041CD71 /* OJQImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F887351F7D0F380041CD71 /* OJQImageStore.m */; };
 		BE508E741F6E3051006DB5F9 /* OJQUITabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE508E731F6E3051006DB5F9 /* OJQUITabTableViewController.m */; };
 		BE81BE1E1F698EF200C1D554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE1D1F698EF200C1D554 /* main.m */; };
 		BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE81BE201F698EF200C1D554 /* AppDelegate.m */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQQuestionViewController.h; path = Classes/OJQQuestionViewController.h; sourceTree = "<group>"; };
 		22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQQuestionViewController.m; path = Classes/OJQQuestionViewController.m; sourceTree = "<group>"; };
+		22F887341F7D0F380041CD71 /* OJQImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQImageStore.h; path = Classes/OJQImageStore.h; sourceTree = "<group>"; };
+		22F887351F7D0F380041CD71 /* OJQImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQImageStore.m; path = Classes/OJQImageStore.m; sourceTree = "<group>"; };
 		BE508E721F6E3051006DB5F9 /* OJQUITabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQUITabTableViewController.h; path = Classes/OJQUITabTableViewController.h; sourceTree = "<group>"; };
 		BE508E731F6E3051006DB5F9 /* OJQUITabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQUITabTableViewController.m; path = Classes/OJQUITabTableViewController.m; sourceTree = "<group>"; };
 		BE81BE191F698EF200C1D554 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +86,8 @@
 				BEDB56111F6E591900FFCAE0 /* OJQItem.m */,
 				BEE3FA261F742DA0009853BB /* OJQDetialViewController.h */,
 				BEE3FA271F742DA0009853BB /* OJQDetialViewController.m */,
+				22F887341F7D0F380041CD71 /* OJQImageStore.h */,
+				22F887351F7D0F380041CD71 /* OJQImageStore.m */,
 				BEE3FA281F742DA0009853BB /* OJQDetialViewController.xib */,
 				BEDB560D1F6E563000FFCAE0 /* OJQItemStore.h */,
 				BEDB560E1F6E563000FFCAE0 /* OJQItemStore.m */,
@@ -141,6 +146,7 @@
 				TargetAttributes = {
 					BE81BE181F698EF200C1D554 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QQV89LTDQC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F887361F7D0F380041CD71 /* OJQImageStore.m in Sources */,
 				BEE3FA291F742DA0009853BB /* OJQDetialViewController.m in Sources */,
 				BE81BE211F698EF200C1D554 /* AppDelegate.m in Sources */,
 				BEDB560F1F6E563000FFCAE0 /* OJQItemStore.m in Sources */,
@@ -310,10 +317,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QQV89LTDQC;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oujiaqi.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -321,10 +332,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QQV89LTDQC;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oujiaqi.FirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

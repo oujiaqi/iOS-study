@@ -20,11 +20,18 @@
     newItem.age = ages[randomIndex];
     randomIndex = arc4random() %4;
     newItem.height = heights[randomIndex];
+    
+    // 创建保存图片的键值
+    NSUUID *uuid = [[NSUUID alloc] init];
+    NSString *key = [uuid UUIDString];
+    newItem.itemKey = key;
     return newItem;
 }
 
 - (NSString *) description {
     return [NSString stringWithFormat:@"%@ %@ %@", _name, _age, _height];
 }
+
+
 
 @end

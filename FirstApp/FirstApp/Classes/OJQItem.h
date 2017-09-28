@@ -16,6 +16,8 @@
 @property (nonatomic) NSString* age;
 @property (nonatomic) NSString* height;
 
+@property (nonatomic, copy) NSString *itemKey;
+
 + (OJQItem *) randomItem;
 
 @end
