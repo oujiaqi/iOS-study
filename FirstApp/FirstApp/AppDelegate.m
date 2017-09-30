@@ -10,6 +10,7 @@
 #import "OJQLoginViewController.h"
 #import "OJQQuestionViewController.h"
 #import "OJQUITabTableViewController.h"
+#import "OJQDrawViewController.h"
 
 @interface AppDelegate ()
 
@@ -35,8 +36,10 @@
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tabVC];
     
+    OJQDrawViewController *dVC = [[OJQDrawViewController alloc] init];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[loginVC, quesVC, navController];
+    tabBarController.viewControllers = @[loginVC, quesVC, navController, dVC];
     
     self.window.rootViewController = tabBarController;
 //    self.window.backgroundColor = [UIColor whiteColor];
