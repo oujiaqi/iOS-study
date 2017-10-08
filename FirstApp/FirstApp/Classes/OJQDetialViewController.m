@@ -24,6 +24,26 @@
     [self.view endEditing:YES];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    UIImageView *iv = [[UIImageView alloc] initWithImage:nil];
+    
+    iv.contentMode = UIViewContentModeScaleAspectFit;
+    iv.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:iv];
+    self.imageView = iv;
+    
+    // 增加约束
+    NSDictionary *nameMap = @{@"imageView":self.imageView,
+                              @"heightField":self.heightField,
+                              @"toolbar":self.toolbar};
+    NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[imageView]-0-|" options:0 metrics:nil views:nameMap];
+    NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[heightField]-8-[imageView]-8-[toolbar]" options:0 metrics:nil views:nameMap];
+    
+    [self.view addConstraints:horizontalConstraints];
+    [self.view addConstraints:verticalConstraints];
+}
+
 - (void) viewWillAppear:(BOOL)animated {
 //    [super viewWillAppear:<#animated#>];
     OJQItem *item = self.item;

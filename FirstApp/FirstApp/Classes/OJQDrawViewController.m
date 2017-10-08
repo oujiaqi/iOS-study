@@ -11,10 +11,18 @@
 
 @implementation OJQDrawViewController
 - (void) loadView {
-    self.tabBarItem.title = @"More";
-    UIImage *i = [UIImage imageNamed: @"flickr.png"];
-    self.tabBarItem.image = i;
     self.view = [[OJQDrawView alloc] initWithFrame:CGRectZero];
+}
+
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.title = @"More";
+        UIImage *i = [UIImage imageNamed: @"flickr.png"];
+        self.tabBarItem.image = i;
+    }
+    printf("More");
+    return self;
 }
 
 @end
