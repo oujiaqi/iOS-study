@@ -33,6 +33,9 @@
     [self.view addSubview:iv];
     self.imageView = iv;
     
+    [self.imageView setContentHuggingPriority:200 forAxis:UILayoutConstraintAxisVertical];
+    [self.imageView setContentCompressionResistancePriority:700 forAxis:UILayoutConstraintAxisVertical];
+    
     // 增加约束
     NSDictionary *nameMap = @{@"imageView":self.imageView,
                               @"heightField":self.heightField,
