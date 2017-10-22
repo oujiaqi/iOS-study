@@ -15,4 +15,6 @@
 + (instancetype) sharedStore;
 - (OJQItem *) createItem;
 
+- (BOOL)saveChanges;
+
 @end

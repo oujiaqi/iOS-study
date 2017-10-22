@@ -32,6 +32,24 @@
     return [NSString stringWithFormat:@"%@ %@ %@", _name, _age, _height];
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.name forKey:@"name"];
+    [aCoder encodeObject:self.height forKey:@"height"];
+    [aCoder encodeObject:self.age forKey:@"age"];
+    [aCoder encodeObject:self.itemKey forKey:@"itemKey"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    if (self) {
+        _name = [aDecoder decodeObjectForKey:@"name"];
+        _height = [aDecoder decodeObjectForKey:@"height"];
+        _age = [aDecoder decodeObjectForKey:@"age"];
+        _itemKey = [aDecoder decodeObjectForKey:@"itemKey"];
+    }
+    return self;
+}
+
 
 
 @end

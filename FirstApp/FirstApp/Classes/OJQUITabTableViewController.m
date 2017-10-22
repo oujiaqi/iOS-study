@@ -56,9 +56,6 @@
     UIImage *i = [UIImage imageNamed: @"flickr.png"];
     self.tabBarItem.image = i;
     if (self) {
-        for (int i = 0; i < 5; i++) {
-            [[OJQItemStore sharedStore] createItem];
-        }
         UINavigationItem *navItem = self.navigationItem;
         navItem.title = @"Main";
         UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];

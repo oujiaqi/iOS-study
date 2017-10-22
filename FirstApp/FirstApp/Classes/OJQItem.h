@@ -10,7 +10,7 @@
 
 
 
-@interface OJQItem : NSObject
+@interface OJQItem : NSObject<NSCoding>
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* age;

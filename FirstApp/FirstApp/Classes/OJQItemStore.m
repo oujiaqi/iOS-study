@@ -33,7 +33,12 @@
 - (instancetype) initPrivate {
     self = [super init];
     if (self) {
-        _privateItems = [[NSMutableArray alloc] init];
+//        _privateItems = [[NSMutableArray alloc] init];
+        NSString *path = [self itemArchivePath];
+        _privateItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        if (! _privateItems) {
+            _privateItems = [[NSMutableArray alloc] init];
+        }
     }
     return self;
 }
@@ -47,6 +52,20 @@
     OJQItem *item = [OJQItem randomItem];
     [self.privateItems addObject:item];
     return item;
+}
+
+- (NSString *)itemArchivePath {
+    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    for (NSString *i in documentDirectories) {
+        NSLog(@"%@", i);
+    }
+    NSString *documentDirectory = [documentDirectories firstObject];
+    return [documentDirectory stringByAppendingPathComponent:@"items.archive"];
+}
+
+- (BOOL)saveChanges {
+    NSString *path = [self itemArchivePath];
+    return [NSKeyedArchiver archiveRootObject:self.privateItems toFile:path];
 }
 
 @end

@@ -89,14 +89,18 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     // 通过info字典获取选择的照片
+    printf("testing1");
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     
     // 以itemKey为键，将照片存入OJQImageStore对象
+    printf("testing2");
     [[OJQImageStore sharedStore] setImage:image forKey:self.item.itemKey];
     
     // 设置图片
+    printf("testing3");
     self.imageView.image = image;
     // 关闭UIImagePickerController对象
+    printf("testing4");
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
