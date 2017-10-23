@@ -11,6 +11,8 @@
 #import "OJQItem.h"
 #import "OJQDetialViewController.h"
 
+#import "OJQItemCell.h"
+
 
 @interface OJQUITabTableViewController ()
 
@@ -36,7 +38,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    
+    UINib *nib = [UINib nibWithNibName:@"OJQItemCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"OJQItemCell"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -82,12 +87,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableCell"];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    
+    
+//    NSArray *items = [[OJQItemStore sharedStore] allItems];
+//    OJQItem *item = items[indexPath.row];
+//    cell.textLabel.text = [item description];
+//    return cell;
+    
+    OJQItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OJQItemCell" forIndexPath:indexPath];
     NSArray *items = [[OJQItemStore sharedStore] allItems];
     OJQItem *item = items[indexPath.row];
-    cell.textLabel.text = [item description];
+    cell.name.text = item.name;
+    cell.height.text = item.height;
+    cell.age.text = item.age;
+    cell.imageView.image = [UIImage imageNamed: @"flickr.png"];
     return cell;
-    
 }
 
 @end

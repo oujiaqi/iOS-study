@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22303B3A1F9DB127003196F4 /* OJQItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22303B391F9DB127003196F4 /* OJQItemCell.m */; };
+		22303B3C1F9DB1B7003196F4 /* OJQItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22303B3B1F9DB1B7003196F4 /* OJQItemCell.xib */; };
 		22D3790E1F6A715C0066F40A /* OJQQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */; };
 		22F887361F7D0F380041CD71 /* OJQImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F887351F7D0F380041CD71 /* OJQImageStore.m */; };
 		22F887391F7FBAC20041CD71 /* OJQLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F887381F7FBAC20041CD71 /* OJQLine.m */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22303B381F9DB127003196F4 /* OJQItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQItemCell.h; path = Classes/OJQItemCell.h; sourceTree = "<group>"; };
+		22303B391F9DB127003196F4 /* OJQItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQItemCell.m; path = Classes/OJQItemCell.m; sourceTree = "<group>"; };
+		22303B3B1F9DB1B7003196F4 /* OJQItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJQItemCell.xib; path = Classes/OJQItemCell.xib; sourceTree = "<group>"; };
 		22D3790C1F6A715C0066F40A /* OJQQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQQuestionViewController.h; path = Classes/OJQQuestionViewController.h; sourceTree = "<group>"; };
 		22D3790D1F6A715C0066F40A /* OJQQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJQQuestionViewController.m; path = Classes/OJQQuestionViewController.m; sourceTree = "<group>"; };
 		22F887341F7D0F380041CD71 /* OJQImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJQImageStore.h; path = Classes/OJQImageStore.h; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 				BE81BE331F698F2300C1D554 /* OJQLoginViewController.h */,
 				BE81BE341F698F2300C1D554 /* OJQLoginViewController.m */,
 				BE81BE351F698F2300C1D554 /* OJQLoginViewController.xib */,
+				22303B381F9DB127003196F4 /* OJQItemCell.h */,
+				22303B3B1F9DB1B7003196F4 /* OJQItemCell.xib */,
+				22303B391F9DB127003196F4 /* OJQItemCell.m */,
 				BE81BE251F698EF200C1D554 /* Main.storyboard */,
 				BE81BE281F698EF200C1D554 /* Assets.xcassets */,
 				BE81BE2A1F698EF200C1D554 /* LaunchScreen.storyboard */,
@@ -194,6 +202,7 @@
 				BE81BE371F698F2300C1D554 /* OJQLoginViewController.xib in Resources */,
 				BE81BE291F698EF200C1D554 /* Assets.xcassets in Resources */,
 				BE81BE271F698EF200C1D554 /* Main.storyboard in Resources */,
+				22303B3C1F9DB1B7003196F4 /* OJQItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 				BEDB56121F6E591900FFCAE0 /* OJQItem.m in Sources */,
 				BE508E741F6E3051006DB5F9 /* OJQUITabTableViewController.m in Sources */,
 				22F8873C1F7FBB320041CD71 /* OJQDrawView.m in Sources */,
+				22303B3A1F9DB127003196F4 /* OJQItemCell.m in Sources */,
 				BE81BE361F698F2300C1D554 /* OJQLoginViewController.m in Sources */,
 				22F8873F1F7FBB9C0041CD71 /* OJQDrawViewController.m in Sources */,
 				22F887391F7FBAC20041CD71 /* OJQLine.m in Sources */,
