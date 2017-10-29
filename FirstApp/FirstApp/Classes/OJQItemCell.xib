@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pm2-W6-E0G" id="0je-Ub-pP8">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP1-4u-EtE">
@@ -32,9 +32,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtM-Jj-aP7">
-                        <rect key="frame" x="0.0" y="3" width="36" height="36"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xtM-Jj-aP7">
+                        <rect key="frame" x="5" y="6" width="30" height="30"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAN-ny-ikL">
                         <rect key="frame" x="158" y="11" width="51" height="21"/>
@@ -43,7 +42,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLf-19-fJX">
+                        <rect key="frame" x="5" y="6" width="30" height="30"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                        <connections>
+                            <action selector="showImage:" destination="Pm2-W6-E0G" eventType="touchUpInside" id="93W-Fu-aLK"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="jLf-19-fJX" firstAttribute="trailing" secondItem="xtM-Jj-aP7" secondAttribute="trailing" id="0UT-jm-kV6"/>
+                    <constraint firstItem="xtM-Jj-aP7" firstAttribute="leading" secondItem="0je-Ub-pP8" secondAttribute="leading" constant="5" id="EhL-ip-VHd"/>
+                    <constraint firstItem="jLf-19-fJX" firstAttribute="top" secondItem="xtM-Jj-aP7" secondAttribute="top" id="Uhv-oZ-CqY"/>
+                    <constraint firstItem="jLf-19-fJX" firstAttribute="bottom" secondItem="xtM-Jj-aP7" secondAttribute="bottom" id="aGJ-fO-v5v"/>
+                    <constraint firstItem="jLf-19-fJX" firstAttribute="leading" secondItem="xtM-Jj-aP7" secondAttribute="leading" id="dCZ-6g-Niy"/>
+                    <constraint firstItem="jLf-19-fJX" firstAttribute="centerY" secondItem="0je-Ub-pP8" secondAttribute="centerY" id="kFW-RW-XjF"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="age" destination="iAN-ny-ikL" id="5UC-tH-5oG"/>
@@ -51,7 +65,7 @@
                 <outlet property="name" destination="tP1-4u-EtE" id="Stf-MB-h5z"/>
                 <outlet property="thumbnailView" destination="xtM-Jj-aP7" id="PIZ-9a-hmN"/>
             </connections>
-            <point key="canvasLocation" x="-107.5" y="56"/>
+            <point key="canvasLocation" x="-27" y="59"/>
         </tableViewCell>
     </objects>
 </document>

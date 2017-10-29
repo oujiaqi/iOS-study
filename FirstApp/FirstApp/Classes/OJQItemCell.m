@@ -10,4 +10,11 @@
 
 @implementation OJQItemCell
 
+- (IBAction)showImage:(id)sender {
+    // 调用Block对象之前检查Block对象是否存在
+    if (self.actionBlock) {
+        self.actionBlock();
+    }
+}
+
 @end

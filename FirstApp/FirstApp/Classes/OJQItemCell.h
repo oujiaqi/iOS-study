@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *age;
 @property (weak, nonatomic) IBOutlet UILabel *height;
 
+@property (copy, nonatomic) void (^actionBlock) (void);
+
 @end

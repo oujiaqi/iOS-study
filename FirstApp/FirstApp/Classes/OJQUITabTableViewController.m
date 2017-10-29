@@ -102,6 +102,9 @@
     cell.height.text = item.height;
     cell.age.text = item.age;
     cell.imageView.image = [UIImage imageNamed: @"flickr.png"];
+    cell.actionBlock = ^{
+        NSLog(@"Going to show image for %@", item);
+    };
     return cell;
 }
 
